@@ -387,7 +387,7 @@ $address = "G Floor, No 4/2, 1st Main, Netaji Nagar, Bangalore, Karnataka, India
         foreach($services as $i => $s):
           $delay = ($i % 3) * 100;
       ?>
-      <div class="reveal service-card bg-white rounded-xl p-6 cursor-pointer" style="transition-delay:<?= $delay ?>ms">
+      <div class="reveal service-card bg-white rounded-xl p-6 cursor-pointer" 
         <div class="service-icon w-12 h-12 rounded-lg bg-gold/10 text-gold flex items-center justify-center mb-4">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="<?= $s[0] ?>"/>
@@ -428,7 +428,7 @@ $address = "G Floor, No 4/2, 1st Main, Netaji Nagar, Bangalore, Karnataka, India
         ];
         foreach($whys as $i => $w):
       ?>
-      <div class="reveal p-6 rounded-xl border border-gold/10 bg-white/5 hover:bg-white/10 hover:border-gold/30 transition-all duration-300" style="transition-delay:<?= ($i%3)*100 ?>ms">
+      <div class="reveal p-6 rounded-xl border border-gold/10 bg-white/5 hover:bg-white/10 hover:border-gold/30 transition-all duration-300" >
         <div class="text-3xl mb-4"><?= $w[0] ?></div>
         <h3 class="font-display text-xl text-white font-semibold mb-2"><?= $w[1] ?></h3>
         <p class="text-white/50 font-body text-sm leading-relaxed"><?= $w[2] ?></p>
@@ -462,7 +462,7 @@ $address = "G Floor, No 4/2, 1st Main, Netaji Nagar, Bangalore, Karnataka, India
         ];
         foreach($testimonials as $i => $t):
       ?>
-      <div class="reveal testimonial-card bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow" style="transition-delay:<?= ($i%3)*100 ?>ms">
+      <div class="reveal testimonial-card bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow" 
         <!-- Stars -->
         <div class="flex gap-0.5 mb-4">
           <?php for($s=0;$s<5;$s++): ?>
